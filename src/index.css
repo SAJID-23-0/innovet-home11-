@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/*font-family: "Open Sans", sans-serif; 
+    font-family: "Comic Neue", cursive; */
+/* ========================================== google fonts end ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    /* width: 100%; */
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container {
+    width: 1180px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.common_button {
+    padding: 14px 28px;
+    background-color: #2F93FD;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 100px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.common_headding {
+    font-size: 48px;
+    font-weight: 800;
+    font-family: "Open Sans", sans-serif;
+    color: #001838;
+}
+
+.common_details {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Comic Neue", cursive;
+    color: #486489;
+    width: 570px;
+}
+
+/* ============================== COMMON CSS END =============================== */
+
+/* ============================== NAV PART CSS START =============================== */
+#navbar .container {
+    height: 64px
+}
+
+.nav_col_logo {
+    width: 20%;
+}
+
+.nav_col_menu {
+    width: 60%;
+}
+
+.nav_col_button {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_col_button .common_button {
+    margin-left: auto;
+}
+
+
+.nav_col_menu ul {
+    display: flex;
+    margin: auto;
+    gap: 40px;
+    line-height: 64px;
+    width: fit-content;
+}
+
+.nav_col_menu ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2D4A68;
+    font-family: "Open Sans", sans-serif;
+}
+
+.nav_col_menu ul li a:hover {
+    color: #2F93FD;
+}
+
+/* ============================== NAV PART CSS END =============================== */
+
+/* ============================== BANNER PART CSS START =============================== */
+#banner {
+    padding: 174px 0;
+}
+
+.banner_col_details {
+    position: relative;
+}
+
+.banner_col_details .common_headding {
+    font-size: 64px;
+    width: 573px;
+}
+
+.banner_col_details .common_details {
+    margin: 24px 0 56px;
+}
+
+.banner_element_img {
+    position: absolute;
+    left: 10px;
+    top: -90px;
+}
+
+.banner_buttons .banner_service_button {
+    font-size: 18px;
+    font-weight: 700;
+    color: #37B865;
+    font-family: "Comic Neue", cursive;
+    margin-left: 40px;
+}
+
+/* ============================== BANNER PART CSS END =============================== */
+
+/* ============================== ABOUT US PART CSS START =============================== */
+#about_us {
+    padding: 120px 0 47px;
+}
+
+.about_us_col_left {
+    width: 50%;
+    position: relative;
+}
+
+.about_us_img {
+    /* width:582px; */
+    position: relative;
+}
+
+.about_us_element {
+    width: 170px;
+    position: absolute;
+    left: 138px;
+    bottom: -74px;
+}
+
+.about_us_cart {
+    height: 167px;
+    width: 247px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 240px;
+    top: 10px;
+}
+
+.about_us_cart .about_us_cart_hedding {
+    display: flex;
+    align-items: center;
+}
+
+.about_us_cart .about_us_cart_hedding h4 {
+    font-size: 64px;
+    font-weight: 800;
+    color: #37B865;
+    font-family: "Open Sans", sans-serif;
+}
+
+.about_us_cart .about_us_cart_hedding p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #001838;
+    font-family: "Comic Neue", cursive;
+
+}
+
+.about_us_cart p {
+    font-size: 35px;
+    font-weight: 700;
+    color: #001838;
+    font-family: "Comic Neue", cursive;
+
+}
+
+.about_us_col_right {
+    width: 50%;
+    margin-left: 156px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_us_headding h3 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Comic Neue", cursive;
+    color: #37B865;
+    position: relative;
+}
+
+.about_us_headding h3::before {
+    content: '';
+    width: 64px;
+    height: 4px;
+    background-color: #37B865;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+.about_us_headding .common_headding {
+    margin: 12px 0 24px;
+}
+
+.about_us_details p:last-child {
+    margin: 24px 0 56px;
+}
+
+/* ============================== ABOUT US PART CSS END =============================== */
+
+/* ============================== COUNTER PART CSS START =============================== */
+   #counter{
+    background-color:#003173;
+    padding: 90px 0;
+   }
+   .counter_col{
+       width: 25%;
+       border-right: 1px solid #37B865;
+    }
+    .counter_details {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+    .counter_col:nth-child(4) {
+        border: none;
+    }
+   .counter_details .common_headding{
+       color: #FFFFFF;
+       font-weight:700;
+    }
+    .counter_details .common_details{
+        color:#FFFFFF;
+        font-weight:700;
+        width:fit-content;
+    }
+/* ============================== COUNTER PART CSS END =============================== */
+
+/* ============================== SERVICE PART CSS START =============================== */
+  #service{
+    padding:110px 0;
+  }
+  .service_details{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+    }
+    .service_details .common_headding{
+        width:712px;
+        text-align:center;
+        margin:12px 0 24px;
+    }
+    .service_details .common_details{
+        width:692px;
+        text-align:center;
+        margin-bottom: 70px;
+    }
+    .service_col{
+        width:33%;
+    }
+    .service_slider{
+        width: 370px;
+        height:427px;
+        background-color:#FFFFFF;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content:center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .service_slider_details h4{
+        font-size:24px;
+        font-weight:800;
+        font-family: "Open Sans", sans-serif;
+        color:#001838;
+        margin:48px auto 24px;
+        width:fit-content;
+    }
+    .service_slider_details p{
+        font-size:18px;
+        font-weight:300;
+        font-family: "Comic Neue", cursive;
+        color:#486489;
+        width:310px;
+        text-align:center;
+    }
+/* ============================== SERVICE PART CSS END =============================== */
+
+/* ============================== CHOOSE PART CSS START =============================== */
+   #choose{
+    padding:110px 0;
+   }
+   .choose_col_details{
+    width:35%;
+   }
+   .choose_col_img{
+    width:40%;
+   }
+   .choose_col_card{
+    width:25%;
+   }
+   .choose_details .common_headding{
+       width:368px;
+       margin:12px 0 24px;
+    }
+    .choose_details .common_details{
+        margin-bottom:56px;
+        width:358px;
+        line-height:180%;
+    }
+/* ============================== CHOOSE PART CSS END =============================== */
+
+/* ============================== SUCCESS PART CSS START =============================== */
+ #success{
+    padding-top: 84px;
+    background-color:#003173;
+ }
+ .success_details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .success_details_left .common_headding{
+    width:564px;
+    color:#FFFFFF;
+    margin-top: 12px;
+ }
+ .success_details_right .common_details{
+    width:532px;
+    line-height:180%;
+    color:#FFFFFF;
+    margin-top: 45px;
+ }
+ .success_row{
+    position:relative;
+    bottom:-115px;
+ }
+ .success_col{
+    width:25%;
+ }
+ .success_items{
+    position:relative;
+ }
+ .success_items_details{
+     background-color:#FFFFFF;
+     padding: 8px 30px;
+     border-radius:4px;
+     position: absolute;
+     left:16px;
+     bottom: 8px;
+    }
+    .success_items_details h4{
+        font-size:22px;
+        font-weight:700;
+        color:#001838;
+        font-family: "Comic Neue", cursive;
+    }
+    .success_items_details p{
+        font-size:18px;
+        font-weight:500;
+        color:#37B865;
+        font-family: "Comic Neue", cursive;
+        margin:auto;
+        width: fit-content;
+    }
+/* ============================== SUCCESS PART CSS END =============================== */
+
+/* ============================== FEEDBACK PART CSS START =============================== */
+ #feedback{
+    padding: 220px 0 100px;
+ }
+ .feedback_headding .common_headding{
+    width:606px;
+    margin:12px 0 33px;
+ }
+ .feedback_col{
+    width:33%;
+ }
+ .feedback_items{
+     /* height:458px;
+     width:392px; */
+     padding:31px 31px 15px 31px;
+     background-color:#FFFFFF;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     border-radius:10px;
+    }
+    .feedback_items h5{
+        font-size:18px;
+        font-weight:700;
+        color:#001838;
+        font-family: "Comic Neue", cursive;
+        margin:15px auto 0;
+        width: fit-content;
+    }
+    .feedback_items p{
+        font-size:12px;
+        font-weight:400;
+        color:#486489;
+        font-family: "Comic Neue", cursive;
+        margin: auto;
+        width: fit-content;
+    }
+    .feedback_row{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .feedback_review{
+        padding:0 40px 30px;
+        background-color: #F5F9FF;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .feedback_review_details .common_details{
+        width:250px;
+        line-height: 180%;
+        text-align:center;
+        margin: 30px 0;
+    }
+    .feedback_review_details h5{
+        font-size:18px;
+        font-weight:700;
+        color:#001838;
+        font-family: "Comic Neue", cursive;
+        margin: auto;
+        width: fit-content;
+    }
+    .feedback_review_details p{
+        font-size:12px;
+        font-weight:400;
+        color:#486489;
+        font-family: "Comic Neue", cursive;
+        margin: auto;
+        width: fit-content;
+    }
+/* ============================== FEEDBACK PART CSS END =============================== */
+
+/* ============================== BLOG PART CSS START =============================== */
+ #blog{
+    padding:110px 0 ;
+ }
+ .blog_headding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ .blog_headding .common_headding{
+    width:750px;
+    text-align:center;
+    margin:12px 0 56px;
+ }
+ .blog_row{
+    display: flex;
+    gap: 30px;
+ }
+ .blog_col{
+    padding-bottom: 30px;
+    background-color:#FFFFFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ }
+ .blog_img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+ }
+ .blog_details{
+    margin-left: 30px;
+ }
+ .blog_date{
+     background-color:#37B865;
+     border-radius: 5px;
+     padding:13px 15px;
+     display:inline-flex;
+     align-items: center;
+     gap:12px;
+     position: absolute;
+     left: 30px;
+     top: 250px;
+    }
+.blog_date h3{
+    font-size:48px;
+    font-weight: 700;
+    font-family: "Comic Neue", cursive;
+    color: #FFFFFF;
+}
+.blog_ym p{
+    font-size:18px;
+    font-weight: 400;
+    font-family: "Comic Neue", cursive;
+    color: #FFFFFF;
+}
+.blog_tag {
+    display: flex;
+    gap:48px;
+    margin-top: 50px;
+}
+.blog_tag p{
+    font-size:16px;
+    font-weight: 400;
+    font-family: "Comic Neue", cursive;
+    color:#37B865;
+}
+.blog_tag p:first-child{
+    position: relative;
+}
+.blog_tag p:first-child:after{
+    content: '';
+    height: 18px;
+    width: 1px;
+    background-color: #37B865;
+    position: absolute;
+    top: 0;
+    right: -24px;
+}
+.blog_text h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Comic Neue", cursive;
+    color:#000000;
+    position: relative;
+    margin: 20px 0 28px;
+}
+.blog_text h2::after{
+    content: '';
+    width:66px;
+    height:4px;
+    background-color: #37B865;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+}
+.blog_text p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Comic Neue", cursive;
+    color:#486489;
+    width:310px;
+    line-height: 120%;
+}
+/* ============================== BLOG PART CSS END =============================== */
+
+/* ============================== FOOTER PART CSS START =============================== */
+#footer{
+    padding:140px 0 57px;
+    background-color: #0B3A77;
+}
+.footer_col_1{
+    width: 40%;
+}
+.footer_col{
+    width: 20%;
+}
+.footer_description .common_details{
+    width:451px;
+    color: #FFFFFF;
+    margin-top: 44px;
+    line-height:180%;
+}
+.footer_feature{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:48px;
+}
+.footer_feature h3{
+    font-size:24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+}
+.footer_feature ul li a{
+    font-size:20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 30px;
+}
+.footer_feature ul li:last-child a{
+    margin-bottom: 0;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.copyright p{
+    font-size:18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* ============================== FOOTER PART CSS END =============================== */
